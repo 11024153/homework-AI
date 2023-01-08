@@ -26,23 +26,29 @@
 	* 用Colab開啟FaceFake.ipynb
 	* 修改位置
 		```python
-		model = "/content/drive/MyDrive/cs11024153/shape_predictor_68_face_landmarks.dat"
+		model = "/content/drive/MyDrive/創建資料夾名稱/shape_predictor_68_face_landmarks.dat"
 		```
     * 換臉照片Img1
     	```python
-		image1 = cv2.imread('/content/drive/MyDrive/cs11024153/im1.jpg')  #換臉照片
+		image1 = cv2.imread('/content/drive/MyDrive/創建資料夾名稱/im1.jpg')  #換臉照片
 		drive.m
         ```
     * 被換臉照片Img2
     	```python
-		image2 = cv2.imread('/content/drive/MyDrive/cs11024153/im2.jpg')  #被換臉照片
-		drive.m
+		image2 = cv2.imread('/content/drive/MyDrive/創建資料夾名稱/im2.jpg')  #被換臉照片
+		drive.m1
+        ```
+    * 被換臉照片Img1,Img2
+    	```python
+		image1 = cv2.imread('/content/drive/MyDrive/創建資料夾名稱/im1.jpg')
+		image2 = cv2.imread('/content/drive/MyDrive/創建資料夾名稱/im2.jpg')
         ```
 * 第四步 參數修改
  	* __COLOUR_CORRECT_BLUR_FRAC__:此參數是將兩張圖片的顏色進行矯正，此數值越高的話兩張圖像合成的顏色差異會越明顯，越低會使合成的顏色更加接近，通常介於1~0.1
  	* __FEATHER_AMOUNT__:此參數可以將兩張圖片合成的邊緣進行霧化處理，數值將決定邊緣進行霧化的像素數量，通常介於15~5
 * 第五步 程式碼執行
 	* 由上到下按照順續執行Colab程式碼即可完成
+
 ## 注意事項
  * 資料夾名不要使用中文
  * 為學術用途使用，請勿販賣
